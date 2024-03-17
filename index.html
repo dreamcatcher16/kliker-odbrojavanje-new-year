@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Odbrojavanje Nove godine</title>
+</head>
+
+<body>
+  <div id="year" class="year"></div>
+
+  <h1>Odbrojavanje Nove godine</h1>
+
+  <!-- inicijalne vrednosti h2 elemenata nisu bitne
+  jer će se JavaScript kod zadužen za popunjavanje h2 elemenata
+  toliko brzo izvršiti da se one i neće videti -->
+  <div id="countdown" class="countdown">
+    <div class="time">
+      <h2 id="days">00</h2> <!-- prikaz dana -->
+      <small>d</small>
+    </div>
+    <div class="time">
+      <h2 id="hours">00</h2> <!-- prikaz sati -->
+      <small>h</small>
+    </div>
+    <div class="time">
+      <h2 id="minutes">00</h2> <!-- prikaz minuta -->
+      <small>m</small>
+    </div>
+    <div class="time">
+      <h2 id="seconds">00</h2> <!-- prikaz sekundi -->
+      <small>s</small>
+    </div>
+  </div>
+
+  <!-- prikazujemo kružić (spinner) za učitavanje -->
+  <img src="./img/spinner.gif" alt="Učitvanje..." id="loading" class="loading" />
+
+  <script src="script.js"></script>
+</body>
+
+</html>
